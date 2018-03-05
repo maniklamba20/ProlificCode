@@ -10,4 +10,5 @@ import Foundation
 
 class constant {
     static var getBooks = "http://prolific-interview.herokuapp.com/5a985b026cb173000a85894e/books"
+    static var postBooks = ""
 }
