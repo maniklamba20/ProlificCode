@@ -12,10 +12,15 @@ class AddBookViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let doneBarButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector (done))
+        self.navigationItem.setRightBarButton(doneBarButton, animated: true)
 
         // Do any additional setup after loading the view.
     }
 
+    @objc func done(){
+        self.dismiss(animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
